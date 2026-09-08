@@ -1,0 +1,121 @@
+exercício 1
+num1 = 20
+num2 = 5
+
+soma = num1 + num2
+subtração = num1 - num2
+multiplicação = num1 * num2
+divisão = num1 / num2
+
+print("Soma:", soma)
+print("Subtração:", subtração)
+print("multiplicação:", multiplicação)
+print("divisão:", divisão)
+
+Subtração: 15
+multiplicação: 100
+divisão: 4.0
+-----------------------------------------------------------------------------------------------------------------------
+exercício 2
+idade = int(input("Digite sua idade:"))
+if idade >= 27:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
+Digite sua idade:26 
+Menor de idade
+----------------------------------------------------------------------------------------------------------------------
+exercício 3
+nota1 = float(input("Digite a primeira nota:"))
+nota2 = float(input("Digite a segunda nota:"))
+nota3 = float(input("Digite a terceira nota:"))
+
+media = (nota1 + nota2 + nota3) / 3
+print("Média:", media)
+
+if media >= 7:
+    print("Aprovado")
+elif media >= 5:
+    print("Recuperação")
+else:
+    print("Reprovado")
+PLAIN TEXT
+7,5
+8,2
+6,5
+-------------------------------------------------------------------------------------------------------------------------
+exercício 4
+numero = int(input("Digite um número inteiro:"))
+if numero % 2 == 0:
+    print("O número é PAR")
+else:
+    print("O número é ÍMPAR")
+digite um número inteiro: 10
+o número é PAR
+----------------------------------------------------------------------------------------------------------------------
+exercicío 5
+contador = 1
+
+while contador <= 10:
+    print(contador)
+    contador = contador + 1
+contador = 1
+
+O contador é de 1 ao 10
+-------------------------------------------------------------------------------------------------------------------
+exercicío 6
+senha = ""
+
+while senha != "python9955":
+    senha = input("Digite a senha:")
+print("Senha correta!")
+
+senha:PYTHON9955
+--------------------------------------------------------------------------------------------------------------------
+exercicío 7
+for numero in range(1, 11):
+    resultado = 6 * numero
+    print("6 *", numero, "=", resultado)
+6 * 8 = 48
+6 * 9 = 54
+6 * 10 = 60
+-------------------------------------------------------------------------------------------------------------------
+exercicío 8
+frutas = ["maça", "banana", "melão", "laranja"]
+for fruta in frutas:
+    print(fruta.upper())
+upper serve para transformar os texto em letras maiúsculas.
+------------------------------------------------------------------------------------------------------------------
+exercío 9
+numeros = []
+
+for i in range(5):
+    numero = int(input("Digite um número: "))
+    numeros.append(numero)
+    
+soma = sum(numeros)
+print("A soma dos números é:", soma)
+
+Digite um número: 10
+Digite um número: 20
+Digite um número: 5
+Digite um número: 15
+Digite um número: 50
+A soma dos números é: 100
+------------------------------------------------------------------------------------------------------------------------------------------------------
+exercicío 10
+def calcular_area_retangulo(base, altura):
+    area = base * altura
+    return area
+    
+base = float(input("Digite a base:"))
+altura = float(input("Digite a altura:"))
+
+resultado = calcular_area_retangulo(base, altura)
+print("A área do retangulo é:", resultado)
+Digite a base:10
+Digite a altura:5
+A área do retangulo é: 50.0
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+f
