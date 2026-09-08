@@ -16,7 +16,10 @@ Subtração: 15
 multiplicação: 100
 divisão: 4.0
 -----------------------------------------------------------------------------------------------------------------------
-exercício 2
+exercício 
+
+
+
 idade = int(input("Digite sua idade:"))
 if idade >= 27:
     print("Maior de idade")
