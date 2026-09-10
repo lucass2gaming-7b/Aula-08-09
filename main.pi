@@ -120,5 +120,159 @@ Digite a base:10
 Digite a altura:5
 A área do retangulo é: 50.0
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
+exercicío 11 
+numeros = []
 
-f
+for i in range(8):
+    numero = int(input("Digite um numero:"))
+    numeros.append(numero)
+maior = numeros[0]
+menor = numeros[0]
+
+for numero in numeros:
+    if numero > maior:
+       maior = numero
+    
+    if numero > menor:
+        menor = numero
+        
+print("Maior:", maior)
+print("Menor" , menor)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+exercicío 12
+numeros = [10 ,5, 8, 3, 12, 7, 4, 9]
+pares = []
+
+for numero in numeros:
+    if numero % 2 == 0:
+        pares.append(numero)
+        
+print("Lista original:", numero)
+print("Números pares", pares)
+--------------------------------------------------------------------------------------------------------------------------------------------
+exercicío 13
+numero = int(input("Digite um número: "))
+
+fatorial = 1
+contador = 1
+
+while contador <= numero:
+    fatorial = fatorial * contador
+    contador = contador + 1
+    
+print("Fatorial:", fatorial)
+---------------------------------------------------------------------------------------------------------------------------------------------
+exerciío 14
+nomes = [
+    "Lucas",
+    "Pedro",
+    "Joao",
+    "Matheus",
+    "Bianca",
+    "Vitor",
+    "junior",
+    "Yasmin"
+    "Paulo",
+    "Ana",
+]
+nome_busca = input("Digite o nome que deseja buscar: ")
+
+
+if nome_busca in nomes:
+    print("Nome encontrado na lista!")
+else:
+    print("Nome não encontrado.")
+-------------------------------------------------------------------------------------------------------------------------------------
+exercicío 15
+matriz = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+for i in range(3):
+    matriz[i][i] = 1
+    
+for linha in matriz:
+    print(linha)
+
+resultado [1, 0, 0]
+[0, 1, 0]
+[0, 0, 1]
+--------------------------------------------------------------------------------------------------------------------------------------------
+exercicío 16
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6]
+]
+
+soma = 0
+for linha in matriz:
+    for numero in linha:
+        soma = soma + numero
+    
+print("Soma", soma)
+
+soma 21
+------------------------------------------------------------------------------------------------------------------------------------------
+exercicío 17
+def eh_primo(numero):
+    if numero < 2:
+       return False
+       
+    for i in range(2, numero):
+        if numero % i == 0:
+            return False
+            
+    return True
+    
+numero = int(input("Digite um número: "))
+
+if eh_primo(numero):
+    print("É primo!")
+else:
+    print("Não é primo!")
+
+ditige um número [0]
+------------------------------------------------------------------------------------------------------------------------------
+exercicío 18
+def calcular_media(numeros) :
+    soma = 0
+    
+    for numero in numeros:
+        soma = soma + numero
+        
+    media = soma / len(numeros)
+    return media
+    
+lista = [10, 8, 6, 9, 7]
+
+resultado = calcular_media(lista)
+
+print ("Media:", resultado)
+
+media: 8,0
+-------------------------------------------------------------------------------------------------------------------
+exercicío 19
+def soma_diagonal_secundaria(matriz):
+    soma = 0
+    n = len(matriz)
+    
+    for i in range(n):
+        soma += matriz[i][n - 1 - i]
+        return soma
+        
+#Exemplo de matriz
+matriz = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+resultado = soma_diagonal_secundaria(matriz)
+print("Soms da diagonal secundaria:", resultado)
+
+soma diagonal secundaria: 3
+
+-------------------------------------------------------------------------------------------------------------------
+exercicío 20
+
+
